@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MenuActivity" >
+
+    <Button
+        android:id="@+id/AddTripButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"	
+        android:layout_marginTop="128dp"
+        android:text="@string/button_add_trip"
+        android:onClick="addTripMenu"
+         />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"	
+        android:text="@string/button_add_person"
+        android:onClick="addPersonMenu"
+         />
+
+    <Button
+        android:id="@+id/ViewPersonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view_person"
+        android:onClick="viewPersonMenu" />
+
+    <Button
+        android:id="@+id/SetTripCostButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_set_cost"
+        android:onClick="setTripCost" />
+    
+    <Button
+        android:id="@+id/ShowTotalsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_show_all"
+        android:onClick="showAllTotals" />
+    
+    <Button
+        android:id="@+id/ClearTotalsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_clear_all"
+        android:onClick="clearAllTotals" />
+    
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_exit"
+        android:onClick="exitCPC" />
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".AddTripActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+         <TextView
+        	android:id="@+id/textView_driver"
+        	android:layout_width="100dp"
+        	android:layout_height="wrap_content"
+        	android:text="@string/tv_driver" />
+
+         <Spinner
+             android:id="@+id/spinner_driver"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" />
+         
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+            
+         <TextView
+        android:id="@+id/textView_pass1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_pass1" />
+
+         <Spinner
+             android:id="@+id/spinner_pass1"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" />
+      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         
+  		 <TextView
+        	android:id="@+id/textView_pass2"
+        	android:layout_width="100dp"
+        	android:layout_height="wrap_content"
+        	android:text="@string/tv_pass2" />
+
+  		 <Spinner
+  		     android:id="@+id/spinner_pass2"
+  		     android:layout_width="0dip"
+  		     android:layout_height="wrap_content"
+  		     android:layout_weight="1" />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+   		 <TextView
+     	   	android:id="@+id/textView_pass3"
+       		android:layout_width="100dp"
+       		android:layout_height="wrap_content"
+       		android:text="@string/tv_pass3" />
+
+   		 <Spinner
+   		     android:id="@+id/spinner_pass3"
+   		     android:layout_width="0dip"
+   		     android:layout_height="wrap_content"
+   		     android:layout_weight="1" />
+    
+   	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+   		 
+   		 <TextView
+        	android:id="@+id/textView_pass4"
+        	android:layout_width="100dp"
+        	android:layout_height="wrap_content"
+        	android:text="@string/tv_pass4" />
+
+   		 <Spinner
+   		     android:id="@+id/spinner_pass4"
+   		     android:layout_width="0dip"
+   		     android:layout_height="wrap_content"
+   		     android:layout_weight="1" />
+
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/button_add_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_trip" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="devonshire.carpoolcalculator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cpc_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="devonshire.carpoolcalculator.MenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="devonshire.carpoolcalculator.AddPersonActivity"
+            android:label="@string/title_activity_add_person"
+            android:parentActivityName="activity_menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity_menu" />
+        </activity>
+        <activity
+            android:name="devonshire.carpoolcalculator.ViewPersonActivity"
+            android:label="@string/title_activity_view_person"
+            android:parentActivityName="activity_menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="activity_menu" />
+        </activity>
+        <activity
+            android:name="devonshire.carpoolcalculator.AddTripActivity"
+            android:label="@string/title_activity_add_trip"
+            android:parentActivityName="MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MenuActivity" />
+        </activity>
+        <activity
+            android:name="devonshire.carpoolcalculator.SetCostActivity"
+            android:label="@string/title_activity_set_cost"
+            android:parentActivityName="MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MenuActivity" />
+        </activity>
+        <activity
+            android:name="devonshire.carpoolcalculator.ShowTotalsActivity"
+            android:label="@string/title_activity_show_totals"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="devonshire.carpoolcalculator.SendFeedbackActivity"
+            android:label="@string/title_activity_send_feedback"
+            android:parentActivityName="MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MenuActivity" />
+        </activity>
+    </application>
+
+</manifest>
